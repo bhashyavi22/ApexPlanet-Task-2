@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task 2 - Intermediate HTML, CSS &amp; JavaScript</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ===================== HEADER & NAV ===================== -->
+<header>
+  <div class="logo">
+    <span class="logo-icon">✨</span>
+    <span class="logo-text">Web<span class="logo-accent">Dev</span></span>
+  </div>
+  <h1>🚀 Intermediate HTML, CSS &amp; JavaScript</h1>
+  <p>Task 2 &mdash; Forms, Validation, Responsive Layout &amp; DOM Manipulation</p>
+</header>
+
+<!-- Step 3: Flexbox navigation -->
+<nav>
+  <a href="#contact">📝 Contact Form</a>
+  <a href="#layout">📐 Responsive Layout</a>
+  <a href="#todo">✅ To-Do List</a>
+</nav>
+
+<main>
+
+  <!-- ===================== STEP 1 & 2: Contact Form + JS Validation ===================== -->
+  <section id="contact" class="card">
+    <h2>📝 Contact Form</h2>
+    <p class="section-desc">Fill in the details below. All fields are validated with JavaScript before submission.</p>
+
+    <form id="contactForm" novalidate>
+      <div class="form-group">
+        <label for="name">👤 Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <span class="error-msg" id="nameError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="email">📧 Email Address</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com">
+        <span class="error-msg" id="emailError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">📱 Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="10-digit number">
+        <span class="error-msg" id="phoneError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="message">💬 Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your message here..."></textarea>
+        <span class="error-msg" id="messageError"></span>
+      </div>
+
+      <button type="submit" id="submitBtn">📤 Submit</button>
+      <p id="formSuccess" class="success-msg"></p>
+    </form>
+  </section>
+
+  <!-- ===================== STEP 3: Responsive Layout (Flexbox + CSS Grid) ===================== -->
+  <section id="layout" class="card">
+    <h2>📐 Responsive Layout Demo</h2>
+    <p class="section-desc">This grid resizes automatically for mobile, tablet, and desktop screens.</p>
+
+    <div class="grid-container">
+      <div class="grid-item">🌐 <br>HTML</div>
+      <div class="grid-item">🎨 <br>CSS</div>
+      <div class="grid-item">⚡ <br>JavaScript</div>
+      <div class="grid-item">📱 <br>Responsive</div>
+      <div class="grid-item">🧩 <br>Flexbox</div>
+      <div class="grid-item">🗂️ <br>CSS Grid</div>
+    </div>
+  </section>
+
+  <!-- ===================== STEP 4: Dynamic To-Do List (JS DOM Manipulation) ===================== -->
+  <section id="todo" class="card">
+    <h2>✅ Dynamic To-Do List</h2>
+    <p class="section-desc">Add and remove tasks dynamically using JavaScript.</p>
+
+    <div class="todo-input-row">
+      <input type="text" id="todoInput" placeholder="Add a new task...">
+      <button id="addTodoBtn">➕ Add</button>
+    </div>
+
+    <ul id="todoList" class="todo-list"></ul>
+  </section>
+
+</main>
+
+<footer>
+  <p>✨ &copy; 2026 Intermediate Web Development &mdash; Task 2 ✨</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
